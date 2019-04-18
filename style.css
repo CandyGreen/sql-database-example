@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.registration {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.registration > * {
+    flex-basis: 50%;
+}
+
+.forms > form {
+    background-image: linear-gradient(to top, #ccc, #eee);
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px #111;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.forms > form:last-child {
+    margin-bottom: 0;
+}
+
+form h2 {
+    margin: 0 0 15px;
+    color: darkblue;
+    text-shadow: 0 1px 5px #111;
+}
+
+select, input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+select, option {
+    cursor: pointer;
+}
+
+button {
+    background-color: #48e948;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 6px 20px;
+    box-shadow: 0 3px 5px #111;
+    border-radius: 3px;
+    cursor: pointer;
+    transition:
+        background-color 300ms ease,
+        text-shadow 300ms ease;
+}
+
+button:hover {
+    background-color: #32a832;
+    text-shadow: 0 0 5px #fff;
+}
+
+button.danger {
+    background-color: red;
+}
+
+button.danger:hover {
+    background-color: #9e0101;
+}
+
+button.edit {
+    background-color: #19b0e2;
+}
+
+button.edit:hover {
+    background-color: #137da0;
+}
+
+pre {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+table {
+    flex-grow: 1;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    background-image: linear-gradient(to top, #ccc, #eee);
+}
+
+th {
+    background-image: linear-gradient(to top, #333, #666);
+    color: #fff;
+}
+
+.updated td {
+    background-image: linear-gradient(to top, #2ce42c, lightgreen);
+}
